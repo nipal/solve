@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   solve.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fjanoty <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/05/12 23:13:14 by fjanoty           #+#    #+#             */
+/*   Updated: 2016/05/13 00:58:24 by fjanoty          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef SOLVE_H
 # define SOLVE_H
 
-#define POLY_DIM 6
+#define POLY_DIM 5
 
 typedef	struct	s_poly
 {
@@ -14,8 +25,10 @@ typedef	struct	s_poly
 
 #endif
 
-//  -initiaiser le tableau de toutee equation
-//  -definir les derive
+void	poly_creat(t_poly *eq, float *coef);
+void	poly_derivate(t_poly *eq);
+//  -initiaiser le tableau de toutee equation	[ DONE ]
+//  -definir les derive							[ DONE ]
 //  -definir les racine
 //	-solve deg1
 //	-solve deg2
